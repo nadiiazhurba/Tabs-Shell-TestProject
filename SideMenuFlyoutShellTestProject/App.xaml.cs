@@ -1,8 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using SideMenuFlyoutShellTestProject.Services;
-using SideMenuFlyoutShellTestProject.Views;
+﻿using Xamarin.Forms;
 
 namespace SideMenuFlyoutShellTestProject
 {
@@ -12,8 +8,6 @@ namespace SideMenuFlyoutShellTestProject
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 
