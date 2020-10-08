@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SideMenuFlyoutShellTestProject.Views.OPrinciple"
+             Title="{Binding Title}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,20,0,0" VerticalOptions="FillAndExpand">
+                    <Image Source="OPrinciple.png" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,0,30,24" Spacing="10">
+                <Label Text="O — Open-Closed (Принцип открытости-закрытости)" FontSize="Title" HorizontalTextAlignment="Center" />
+                <Label Text="Когда вы меняете текущее поведение класса, эти изменения сказываются на всех системах, работающих с данным классом. Если хотите, чтобы класс выполнял больше операций, то идеальный вариант – не заменять старые на новые, а добавлять новые к уже существующим."
+                       FontSize="16"
+                       Padding="0,0,0,0" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

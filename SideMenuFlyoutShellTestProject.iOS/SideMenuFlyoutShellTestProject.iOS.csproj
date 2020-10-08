@@ -126,6 +126,11 @@
     <BundleResource Include="Resources\background_elegant_white.jpg" />
     <BundleResource Include="Resources\flyout_icon.png" />
     <BundleResource Include="Resources\title.png" />
+    <BundleResource Include="Resources\DPrinciple.png" />
+    <BundleResource Include="Resources\IPrinciple.png" />
+    <BundleResource Include="Resources\LPrinciple.png" />
+    <BundleResource Include="Resources\OPrinciple.png" />
+    <BundleResource Include="Resources\SPrinciple.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

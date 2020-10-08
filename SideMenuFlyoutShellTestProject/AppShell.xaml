@@ -2,18 +2,11 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:views="clr-namespace:SideMenuFlyoutShellTestProject.Views"
-       Title="SOLID Principles"
-       FlyoutIcon="flyout_icon.png"
-       FlyoutVerticalScrollMode="Auto"
-       FlyoutBehavior="Flyout"
-       FlyoutHeaderBehavior="CollapseOnScroll"
-       FlyoutBackgroundImage="background_elegant_white.jpg"
-       FlyoutBackgroundImageAspect="AspectFill"
        x:Class="SideMenuFlyoutShellTestProject.AppShell">
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="Silver" />
+                <Setter Property="Shell.BackgroundColor" Value="SlateGray" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="AntiqueWhite" />
@@ -27,46 +20,46 @@
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
-
-
+    
     <Shell.FlyoutHeader>
         <Image Aspect="AspectFit" 
                Source="header.png"
-               HeightRequest="150"/>
+               HeightRequest="150"
+               BackgroundColor="White"/>
     </Shell.FlyoutHeader>
 
     <FlyoutItem Title="Single Responsibility">
         <Tab>
             <ShellContent Title="Single Responsibility">
-                <views:SolidPrinciplePage Title="Single Responsibility" />
+                <views:SPrinciple Title="Single Responsibility" />
             </ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Open-Closed">
         <Tab>
             <ShellContent>
-                <views:SolidPrinciplePage Title="Open-Closed"/>
+                <views:OPrinciple Title="Open-Closed"/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Liskov Substitution">
         <Tab>
             <ShellContent>
-                <views:SolidPrinciplePage Title="Liskov Substitution"/>
+                <views:LPrinciple Title="Liskov Substitution"/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Interface Segregation">
         <Tab>
             <ShellContent>
-                <views:SolidPrinciplePage Title="Interface Segregation"/>
+                <views:IPrinciple Title="Interface Segregation"/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Dependency Inversion">
         <Tab>
             <ShellContent>
-                <views:SolidPrinciplePage Title="Dependency Inversion"/>
+                <views:DPrinciple Title="Dependency Inversion"/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
