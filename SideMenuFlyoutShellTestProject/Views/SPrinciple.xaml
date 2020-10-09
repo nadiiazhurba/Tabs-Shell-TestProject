@@ -3,6 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SideMenuFlyoutShellTestProject.Views.SPrinciple"
              Title="{Binding Title}">
+
+    <ContentPage.Resources>
+            <Color x:Key="Primary">#96d1ff</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+    </ContentPage.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -21,6 +27,11 @@
                 <Label Text="Если класс отвечает за несколько операций сразу, вероятность возникновения багов возрастает – внося изменения, касающиеся одной из операций вы, сами того не подозревая, можете затронуть и другие."
                        FontSize="16"
                        Padding="0,0,0,0" />
+                <Button Margin="0,10,0,0"
+                        Text="Learn more" 
+                        Command="{Binding GoToDetailsCommand}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
             </StackLayout>
         </ScrollView>
     </Grid>

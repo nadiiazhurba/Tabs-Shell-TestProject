@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using SideMenuFlyoutShellTestProject.Views;
 using Xamarin.Forms;
 
 namespace SideMenuFlyoutShellTestProject
 {
     public partial class AppShell : Shell
     {
-        private readonly Random rand = new Random();
         public Dictionary<string, Type> Routes { get; } = new Dictionary<string, Type>();
 
         public AppShell()
@@ -18,6 +18,8 @@ namespace SideMenuFlyoutShellTestProject
 
         private void RegisterRoutes()
         {
+            Routes.Add("details", typeof(Details));
+
             foreach (var item in Routes)
             {
                 Routing.RegisterRoute(item.Key, item.Value);
