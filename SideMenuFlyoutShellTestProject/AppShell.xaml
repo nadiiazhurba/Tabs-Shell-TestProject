@@ -148,24 +148,36 @@
     </TabBar>-->
 
     <!--Side Menu Flyout with Tabs Implementation-->
-    <FlyoutItem>
-            <ShellContent Title="Single Responsibility"
+    <FlyoutItem Route="principles"
+                Title="Principles"
+                FlyoutDisplayOptions="AsMultipleItems">
+            <ShellContent Route="sPrinciple"
+                          Title="Single Responsibility"
+                          Icon="cat.png"
                           Style="{StaticResource SShell}">
                 <views:SPrinciple Title="Single Responsibility" />
             </ShellContent>
-            <ShellContent Title="Open-Closed"
+            <ShellContent Route="oPrinciple"
+                          Title="Open-Closed"
+                          Icon="bear.png"
                           Style="{StaticResource OShell}">
                 <views:OPrinciple Title="Open-Closed"/>
             </ShellContent>
-            <ShellContent Title="Liskov Substitution"
+            <ShellContent Route="lPrinciple"
+                          Title="Liskov Substitution"
+                          Icon="monkey.png"
                           Style="{StaticResource LShell}">
                 <views:LPrinciple Title="Liskov Substitution"/>
             </ShellContent>
-            <ShellContent Title="Interface Segregation"
+            <ShellContent Route="iPrinciple"
+                          Title="Interface Segregation"
+                          Icon="elephant.png"
                           Style="{StaticResource IShell}">
                 <views:IPrinciple Title="Interface Segregation"/>
             </ShellContent>
-            <ShellContent Title="Dependency Inversion"
+            <ShellContent Route="dPrinciple"
+                          Title="Dependency Inversion"
+                          Icon="dog.png"
                           Style="{StaticResource DShell}">
                 <views:DPrinciple Title="Dependency Inversion"/>
             </ShellContent>
