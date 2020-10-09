@@ -3,25 +3,57 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:views="clr-namespace:SideMenuFlyoutShellTestProject.Views"
        x:Class="SideMenuFlyoutShellTestProject.AppShell">
+
+    <!--Styles Setup-->
     <Shell.Resources>
-        <ResourceDictionary>
-            <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="SlateGray" />
-                <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="White" />
-                <Setter Property="Shell.DisabledColor" Value="AntiqueWhite" />
-                <Setter Property="Shell.UnselectedColor" Value="Gray" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="Silver" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="White" />
-                <Setter Property="Shell.TabBarUnselectedColor" Value="Gray" />
-                <Setter Property="Shell.TabBarTitleColor" Value="White" />
-            </Style>
-            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
-            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
-        </ResourceDictionary>
+        <Style x:Key="BaseStyle"
+               TargetType="Element">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#455A64" />
+            <Setter Property="Shell.ForegroundColor"
+                    Value="White" />
+            <Setter Property="Shell.TitleColor"
+                    Value="White" />
+            <Setter Property="Shell.DisabledColor"
+                    Value="#B4FFFFFF" />
+            <Setter Property="Shell.UnselectedColor"
+                    Value="#95FFFFFF" />
+        </Style>
+        <Style TargetType="ShellItem"
+               BasedOn="{StaticResource BaseStyle}" />
+        <Style x:Key="SShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#039BE6" />
+        </Style>
+        <Style x:Key="OShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#689F39" />
+        </Style>
+        <Style x:Key="LShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#ED3B3B" />
+        </Style>
+        <Style x:Key="IShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#546DFE" />
+        </Style>
+        <Style x:Key="DShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#96d1ff" />
+        </Style>
     </Shell.Resources>
 
-
+    <!--Flyout Header-->
     <Shell.FlyoutHeader>
         <Image Aspect="AspectFit" 
                Source="header.png"
@@ -29,10 +61,12 @@
                BackgroundColor="White"/>
     </Shell.FlyoutHeader>
 
-    <FlyoutItem Title="Single Responsibility"
+    <!--Side Menu Flyout Implementation-->
+    <!--<FlyoutItem Title="Single Responsibility"
                 Icon="S.png">
         <Tab>
-            <ShellContent Title="Single Responsibility">
+            <ShellContent Title="Single Responsibility"
+                          Style="{StaticResource SShell}">
                 <views:SPrinciple Title="Single Responsibility" />
             </ShellContent>
         </Tab>
@@ -40,7 +74,8 @@
     <FlyoutItem Title="Open-Closed"
                 Icon="O.png">
         <Tab>
-            <ShellContent>
+            <ShellContent Title="Open-Closed"
+                          Style="{StaticResource OShell}">
                 <views:OPrinciple Title="Open-Closed"/>
             </ShellContent>
         </Tab>
@@ -48,7 +83,8 @@
     <FlyoutItem Title="Liskov Substitution"
                 Icon="L.png">
         <Tab>
-            <ShellContent>
+            <ShellContent Title="Liskov Substitution"
+                          Style="{StaticResource LShell}">
                 <views:LPrinciple Title="Liskov Substitution"/>
             </ShellContent>
         </Tab>
@@ -56,7 +92,8 @@
     <FlyoutItem Title="Interface Segregation"
                 Icon="I.png">
         <Tab>
-            <ShellContent>
+            <ShellContent Title="Interface Segregation"
+                          Style="{StaticResource IShell}">
                 <views:IPrinciple Title="Interface Segregation"/>
             </ShellContent>
         </Tab>
@@ -64,9 +101,73 @@
     <FlyoutItem Title="Dependency Inversion"
                 Icon="D.png">
         <Tab>
-            <ShellContent>
+            <ShellContent Title="Dependency Inversion"
+                          Style="{StaticResource DShell}">
                 <views:DPrinciple Title="Dependency Inversion"/>
             </ShellContent>
         </Tab>
+    </FlyoutItem>-->
+
+    <!--Tab Bar Implementation-->
+    <!--<TabBar>
+        <Tab Title="S"
+             Icon="cat.png">
+            <ShellContent Title="Single Responsibility"
+                          Style="{StaticResource SShell}">
+                <views:SPrinciple Title="Single Responsibility" IconImageSource="S.png"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="O"
+             Icon="bear.png">
+            <ShellContent Title="Open-Closed"
+                          Style="{StaticResource OShell}">
+                <views:OPrinciple Title="Open-Closed"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="L"
+             Icon="monkey.png">
+            <ShellContent Title="Liskov Substitution"
+                          Style="{StaticResource LShell}">
+                <views:LPrinciple Title="Liskov Substitution"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="I"
+             Icon="elephant.png">
+            <ShellContent Title="Interface Segregation"
+                          Style="{StaticResource IShell}">
+                <views:IPrinciple Title="Interface Segregation"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="D"
+             Icon="dog.png">
+            <ShellContent Title="Dependency Inversion"
+                          Style="{StaticResource DShell}">
+                <views:DPrinciple Title="Dependency Inversion"/>
+            </ShellContent>
+        </Tab>
+    </TabBar>-->
+
+    <!--Side Menu Flyout with Tabs Implementation-->
+    <FlyoutItem>
+            <ShellContent Title="Single Responsibility"
+                          Style="{StaticResource SShell}">
+                <views:SPrinciple Title="Single Responsibility" />
+            </ShellContent>
+            <ShellContent Title="Open-Closed"
+                          Style="{StaticResource OShell}">
+                <views:OPrinciple Title="Open-Closed"/>
+            </ShellContent>
+            <ShellContent Title="Liskov Substitution"
+                          Style="{StaticResource LShell}">
+                <views:LPrinciple Title="Liskov Substitution"/>
+            </ShellContent>
+            <ShellContent Title="Interface Segregation"
+                          Style="{StaticResource IShell}">
+                <views:IPrinciple Title="Interface Segregation"/>
+            </ShellContent>
+            <ShellContent Title="Dependency Inversion"
+                          Style="{StaticResource DShell}">
+                <views:DPrinciple Title="Dependency Inversion"/>
+            </ShellContent>
     </FlyoutItem>
 </Shell>

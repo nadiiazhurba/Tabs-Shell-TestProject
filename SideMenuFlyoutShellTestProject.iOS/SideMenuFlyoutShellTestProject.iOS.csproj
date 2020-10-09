@@ -136,6 +136,16 @@
     <BundleResource Include="Resources\L.png" />
     <BundleResource Include="Resources\I.png" />
     <BundleResource Include="Resources\D.png" />
+    <BundleResource Include="Resources\bear.png" />
+    <BundleResource Include="Resources\bear%402x.png" />
+    <BundleResource Include="Resources\cat.png" />
+    <BundleResource Include="Resources\cat%402x.png" />
+    <BundleResource Include="Resources\dog.png" />
+    <BundleResource Include="Resources\dog%402x.png" />
+    <BundleResource Include="Resources\elephant.png" />
+    <BundleResource Include="Resources\elephant%402x.png" />
+    <BundleResource Include="Resources\monkey.png" />
+    <BundleResource Include="Resources\monkey%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
