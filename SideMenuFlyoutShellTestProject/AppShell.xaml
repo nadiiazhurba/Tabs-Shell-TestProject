@@ -60,56 +60,9 @@
                HeightRequest="150"
                BackgroundColor="White"/>
     </Shell.FlyoutHeader>
-
-    <!--Side Menu Flyout Implementation-->
-    <!--<FlyoutItem Title="Single Responsibility"
-                Icon="S.png">
-        <Tab>
-            <ShellContent Title="Single Responsibility"
-                          Style="{StaticResource SShell}">
-                <views:SPrinciple Title="Single Responsibility" />
-            </ShellContent>
-        </Tab>
-    </FlyoutItem>
-    <FlyoutItem Title="Open-Closed"
-                Icon="O.png">
-        <Tab>
-            <ShellContent Title="Open-Closed"
-                          Style="{StaticResource OShell}">
-                <views:OPrinciple Title="Open-Closed"/>
-            </ShellContent>
-        </Tab>
-    </FlyoutItem>
-    <FlyoutItem Title="Liskov Substitution"
-                Icon="L.png">
-        <Tab>
-            <ShellContent Title="Liskov Substitution"
-                          Style="{StaticResource LShell}">
-                <views:LPrinciple Title="Liskov Substitution"/>
-            </ShellContent>
-        </Tab>
-    </FlyoutItem>
-    <FlyoutItem Title="Interface Segregation"
-                Icon="I.png">
-        <Tab>
-            <ShellContent Title="Interface Segregation"
-                          Style="{StaticResource IShell}">
-                <views:IPrinciple Title="Interface Segregation"/>
-            </ShellContent>
-        </Tab>
-    </FlyoutItem>
-    <FlyoutItem Title="Dependency Inversion"
-                Icon="D.png">
-        <Tab>
-            <ShellContent Title="Dependency Inversion"
-                          Style="{StaticResource DShell}">
-                <views:DPrinciple Title="Dependency Inversion"/>
-            </ShellContent>
-        </Tab>
-    </FlyoutItem>-->
-
+       
     <!--Tab Bar Implementation-->
-    <!--<TabBar>
+    <TabBar>
         <Tab Title="S"
              Icon="cat.png">
             <ShellContent Title="Single Responsibility"
@@ -145,41 +98,5 @@
                 <views:DPrinciple Title="Dependency Inversion"/>
             </ShellContent>
         </Tab>
-    </TabBar>-->
-
-    <!--Side Menu Flyout with Tabs Combined Implementation-->
-    <FlyoutItem Route="principles"
-                Title="Principles"
-                FlyoutDisplayOptions="AsMultipleItems">
-            <ShellContent Route="sPrinciple"
-                          Title="Single Responsibility"
-                          Icon="cat.png"
-                          Style="{StaticResource SShell}">
-                <views:SPrinciple Title="Single Responsibility" />
-            </ShellContent>
-            <ShellContent Route="oPrinciple"
-                          Title="Open-Closed"
-                          Icon="bear.png"
-                          Style="{StaticResource OShell}">
-                <views:OPrinciple Title="Open-Closed"/>
-            </ShellContent>
-            <ShellContent Route="lPrinciple"
-                          Title="Liskov Substitution"
-                          Icon="monkey.png"
-                          Style="{StaticResource LShell}">
-                <views:LPrinciple Title="Liskov Substitution"/>
-            </ShellContent>
-            <ShellContent Route="iPrinciple"
-                          Title="Interface Segregation"
-                          Icon="elephant.png"
-                          Style="{StaticResource IShell}">
-                <views:IPrinciple Title="Interface Segregation"/>
-            </ShellContent>
-            <ShellContent Route="dPrinciple"
-                          Title="Dependency Inversion"
-                          Icon="dog.png"
-                          Style="{StaticResource DShell}">
-                <views:DPrinciple Title="Dependency Inversion"/>
-            </ShellContent>
-    </FlyoutItem>
+    </TabBar>
 </Shell>
