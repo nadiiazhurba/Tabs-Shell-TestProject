@@ -20,7 +20,8 @@
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
-    
+
+
     <Shell.FlyoutHeader>
         <Image Aspect="AspectFit" 
                Source="header.png"
@@ -28,35 +29,40 @@
                BackgroundColor="White"/>
     </Shell.FlyoutHeader>
 
-    <FlyoutItem Title="Single Responsibility">
+    <FlyoutItem Title="Single Responsibility"
+                Icon="S.png">
         <Tab>
             <ShellContent Title="Single Responsibility">
                 <views:SPrinciple Title="Single Responsibility" />
             </ShellContent>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Open-Closed">
+    <FlyoutItem Title="Open-Closed"
+                Icon="O.png">
         <Tab>
             <ShellContent>
                 <views:OPrinciple Title="Open-Closed"/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Liskov Substitution">
+    <FlyoutItem Title="Liskov Substitution"
+                Icon="L.png">
         <Tab>
             <ShellContent>
                 <views:LPrinciple Title="Liskov Substitution"/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Interface Segregation">
+    <FlyoutItem Title="Interface Segregation"
+                Icon="I.png">
         <Tab>
             <ShellContent>
                 <views:IPrinciple Title="Interface Segregation"/>
             </ShellContent>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="Dependency Inversion">
+    <FlyoutItem Title="Dependency Inversion"
+                Icon="D.png">
         <Tab>
             <ShellContent>
                 <views:DPrinciple Title="Dependency Inversion"/>

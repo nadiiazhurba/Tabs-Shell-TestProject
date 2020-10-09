@@ -131,6 +131,11 @@
     <BundleResource Include="Resources\LPrinciple.png" />
     <BundleResource Include="Resources\OPrinciple.png" />
     <BundleResource Include="Resources\SPrinciple.png" />
+    <BundleResource Include="Resources\S.png" />
+    <BundleResource Include="Resources\O.png" />
+    <BundleResource Include="Resources\L.png" />
+    <BundleResource Include="Resources\I.png" />
+    <BundleResource Include="Resources\D.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
