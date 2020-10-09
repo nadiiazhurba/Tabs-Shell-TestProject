@@ -147,7 +147,7 @@
         </Tab>
     </TabBar>-->
 
-    <!--Side Menu Flyout with Tabs Implementation-->
+    <!--Side Menu Flyout with Tabs Combined Implementation-->
     <FlyoutItem Route="principles"
                 Title="Principles"
                 FlyoutDisplayOptions="AsMultipleItems">
